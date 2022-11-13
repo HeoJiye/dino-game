@@ -9,16 +9,25 @@ local composer = require( "composer" )
 local scene = composer.newScene()
 
 
+
 function scene:create( event )
 	local sceneGroup = self.view
 	
-	local background = display.newRect(640, 360, 1280, 720)
+	local background = display.newImage("Content/start/bg.png")
+	background.x, background.y = display.contentCenterX, display.contentCenterY
+
+	local dino = display.newImage("Content/start/dino.png")
+	dino.x, dino.y = display.contentWidth*0.18, display.contentHeight*0.49
+
+	local title = display.newImage("Content/start/title.png")
+	title.x, title.y = display.contentWidth*0.65, display.contentHeight*0.42
+	
 	local startUI = widget.newButton(
 		{ 
-			defaultFile = "Content/start.png", 
-			overFile = "Content/start_over.png",
-			x = display.contentWidth/2, 
-			y = display.contentHeight/2+100, 
+			defaultFile = "Content/start/start.png", 
+			overFile = "Content/start/start_over.png",
+			x = display.contentWidth*0.65, 
+			y = display.contentHeight*0.72, 
 
 			onRelease = function() 
 
@@ -27,6 +36,8 @@ function scene:create( event )
 		})
 
 	sceneGroup:insert(background)
+	sceneGroup:insert(dino)
+	sceneGroup:insert(title)
 	sceneGroup:insert(startUI)
 end
 
@@ -48,6 +59,7 @@ function scene:hide( event )
 	if event.phase == "will" then
 
 	elseif phase == "did" then
+
 
 	end
 end

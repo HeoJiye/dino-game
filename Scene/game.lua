@@ -8,9 +8,39 @@ local widget = require( "widget" )
 local composer = require( "composer" )
 local scene = composer.newScene()
 
+
+
+
 function scene:create( event )
 	local sceneGroup = self.view
 
+	-- physics.start()
+	-- physics.setGravity(0, 0)
+
+	-- BACKGROUND
+
+
+
+	-- DINOSAUR
+ 
+
+
+	-- OBSTACLE
+
+
+
+	-- SCORE
+
+
+
+	-- UI GROUP
+
+
+
+	-- COLLISION EVENT
+
+
+	
 end
 
 function scene:show( event )
@@ -32,6 +62,9 @@ function scene:hide( event )
 
 	elseif phase == "did" then
 
+
+
+
 	end
 end
 
@@ -40,14 +73,9 @@ function scene:destroy( event )
 
 end
 
----------------------------------------------------------------------------------
-
--- Listener setup
 scene:addEventListener( "create", scene )
 scene:addEventListener( "show", scene )
 scene:addEventListener( "hide", scene )
 scene:addEventListener( "destroy", scene )
-
------------------------------------------------------------------------------------------
 
 return scene
