@@ -13,5 +13,5 @@
 
 <br>
 
-<a href="https://github.com/HeoJiye/dino-game-complement/archive/refs/heads/master.zip" target="_blank"><img height="30" src="https://img.shields.io/badge/공룡 게임-완성본 .zip-darkgreen??style=for-the-badge&logo=gitHub"/></a>
+<a href="https://github.com/HeoJiye/dino-game/archive/refs/heads/complete.zip" target="_blank"><img height="30" src="https://img.shields.io/badge/공룡 게임-완성본 .zip-darkgreen??style=for-the-badge&logo=gitHub"/></a>
 </div>
