@@ -8,7 +8,7 @@ local widget = require( "widget" )
 local composer = require( "composer" )
 local scene = composer.newScene()
 
-
+local audioManager = require( "Module.audioManager" )
 
 function scene:create( event )
 	local sceneGroup = self.view
@@ -30,7 +30,7 @@ function scene:create( event )
 			y = display.contentHeight*0.72, 
 
 			onRelease = function() 
-
+				audioManager:soundOn(1)
 				composer.gotoScene("Scene.game")
 			end 
 		})
@@ -48,7 +48,7 @@ function scene:show( event )
 	if phase == "will" then
 
 	elseif phase == "did" then
-
+		audioManager:bgmOn()
 	end	
 end
 
@@ -59,7 +59,7 @@ function scene:hide( event )
 	if event.phase == "will" then
 
 	elseif phase == "did" then
-
+		
 
 	end
 end

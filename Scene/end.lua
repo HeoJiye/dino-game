@@ -12,9 +12,9 @@ function scene:create( event )
 	local background = display.newRect( display.contentCenterX, display.contentCenterY, display.contentWidth, display.contentHeight )
 	background:setFillColor(0)
 
-
+	local score = composer.getVariable("score")
 	
-	local scoreUI = display.newText(0, display.contentWidth/2, display.contentHeight/2)
+	local scoreUI = display.newText(score, display.contentWidth/2, display.contentHeight/2)
     scoreUI.size = 100
 
 	local function replay()
@@ -50,7 +50,7 @@ function scene:hide( event )
 end
 
 function scene:destroy( event )
-	local sceneGroup = self.view 
+	local sceneGroup = self.view
 
 end
 
