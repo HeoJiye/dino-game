@@ -61,10 +61,7 @@ function scene:hide( event )
 	if event.phase == "will" then
 
 	elseif phase == "did" then
-
-
-
-
+		composer.removeScene('Scene.game')
 	end
 end
 
