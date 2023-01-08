@@ -16,7 +16,8 @@ function scene:create( event )
 
 	-- physics.start()
 	-- physics.setGravity(0, 0)
-
+	-- physics.setDrawMode("hybrid") 
+	
 	-- BACKGROUND
 
 
